@@ -27,7 +27,7 @@ class AudioSummarizer:
 
     def _create_llm(self, local_llm):
         if local_llm:
-            return CTransformers(model="./model/mistral-7b-instruct-v0.1.Q4_K_M.gguf", model_type="mistral")
+            return CTransformers(model="C:\Users\Prarthana\Pra_douments\langchain_telegram_audio_summarizer", model_type="mistral")
         return OpenAI(temperature=0)
 
     def _create_parser(self, local_whisper):
